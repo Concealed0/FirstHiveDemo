@@ -22,6 +22,7 @@ public class PersonController {
 	@GetMapping(value="/a",produces="application/json;charset=UTF-8")
 	public String ddd() {
 		List<Person> all=personservice.all();
+		System.out.print("fsfdasdf");
 		return JSON.toJSONString(all);
 		
 	}
